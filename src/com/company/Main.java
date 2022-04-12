@@ -6,8 +6,12 @@ public class Main {
 
         int[] array = new int[5];
 
-        for(int i = 0; i < 6; i++) {
-            array[i] = i;
+        try {
+            for(int i = 0; i < 6; i++) {
+                array[i] = i;
+            }
+        } catch(ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
         }
 
         System.out.println("test");
